@@ -1,0 +1,50 @@
+.user-text-field {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #6666;
+    border-radius: 4px;
+    position: relative;
+    height: 100%;
+  }
+  
+  .user-text-field input[type="text"],
+  .user-text-field input[type="number"],
+  .user-text-field input[type="email"],
+  .user-text-field input[type="date"],
+  .user-text-field select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .user-text-field input[type="text"],
+  .user-text-field input[type="number"],
+  .user-text-field input[type="email"],
+  .user-text-field input[type="date"] {
+    width: calc(100% - 12px);
+  }
+  
+  .user-text-field select {
+    margin-bottom: 5px;
+  }
+  
+  .user-text-field input[type="text"] {
+    margin-bottom: 5px;
+  }
+  
+  .user-text-field input[type="number"],
+  .user-text-field input[type="email"],
+  .user-text-field input[type="date"] {
+    width: calc(100% - 12px);
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  

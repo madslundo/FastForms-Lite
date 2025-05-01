@@ -1,0 +1,52 @@
+.static-text-field {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    margin: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  .static-text-field.editing {
+    background-color: #fff;
+    cursor: text;
+  }
+  
+  .static-text-field textarea {
+    height: calc(100% - 15px);
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+  }
+  
+  .static-text-field p {
+    margin: 0;
+    font-size: 14px;
+    color: #333; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .static-text-field p.empty {
+    color: #aaa; 
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  

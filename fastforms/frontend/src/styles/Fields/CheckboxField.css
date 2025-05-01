@@ -1,0 +1,55 @@
+.checkbox-field {
+    height: calc(100% - 15px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #6666;
+    border-radius: 4px;
+  }
+  
+  .checkbox-field input[type="text"] {
+    width: calc(100% - 15px);
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkbox-content {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 35px);
+  }
+  
+  .checkbox-field input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.5);
+    align-self: center;
+  }
+  
+  .checkbox-textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: calc(100% - 35px);
+  }
+  
+  .checkbox-label {
+    cursor: text;
+    padding: 8px;
+    margin: 0;
+    background-color: #f9f9f9;
+    flex: 1;
+    height: calc(100% - 15px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  

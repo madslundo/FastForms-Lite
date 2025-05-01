@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+#Ignore directory
+fastforms/tests/
+out/

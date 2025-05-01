@@ -1,0 +1,87 @@
+.field-top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0 5%; /* Margins for left and right */
+  background-color: #f8f9fa;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  gap: 20px;
+  width: auto; /* Default width */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.field-top-bar-left,
+.field-top-bar-right {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.field-top-bar-left {
+  flex: 0 0 330px;
+}
+
+.field-top-bar-right {
+  flex: 1;
+}
+
+.field-divider {
+  width: 2px;
+  height: 40px;
+  background-color: #e0e0e0;
+  margin-inline: 10px;
+}
+
+.draggable-field {
+  flex: 1;
+  height: 30px;
+  padding: 10px 20px;
+  border: 1px solid #b4b0b0;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: grab;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.draggable-field:hover {
+  background-color: #f6f7f8;
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.draggable-field:active {
+  cursor: grabbing;
+  background-color: #ebebeb;
+  transform: scale(1.02);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 900px) {
+  .field-top-bar {
+    flex-direction: column;
+    margin: 0; /* Remove side margins on small screens */
+    width: 100%; /* Force full width */
+  }
+  
+  .field-top-bar-left,
+  .field-top-bar-right {
+    flex: 1 0 100%;
+  }
+
+  .draggable-field {
+    flex: 1 1 100%;
+  }
+}

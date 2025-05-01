@@ -1,0 +1,33 @@
+.signature-field {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #6666;
+    border-radius: 4px;
+    position: relative;
+    height: calc(100% - 15px);
+  }
+  
+  .signature-field input[type="text"] {
+    width: calc(100% - 15px);
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signature-area {
+    border: 1px solid #ccc;
+    text-align: center;
+    background: #f9f9f9;
+    height: calc(100% - 35px);
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  

@@ -1,0 +1,580 @@
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center images */
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap when the screen size is smaller */
+}
+
+.img {
+  padding: 10px; /* Reduced padding */
+  width: 25%; /* Keep a consistent width */
+  height: 25%; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images fit within dimensions */
+  margin-top: 20px;
+  margin-right: 55px;
+  margin-left: 55px;
+ 
+}
+
+/* Media query for smaller screens (below 768px, for example) */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Stack the images vertically */
+  }
+
+  .img {
+    width: 80%; /* Make images take up more width on smaller screens */
+    margin: 10px auto; /* Center the images vertically with auto margin */
+  }
+}
+
+
+.view-forms {
+  display: flex;                   /* Enable flexbox for the container */
+  flex-direction: column;          /* Arrange items in a column */
+  align-items: flex-start;         /* Align items to the start (left) */
+  align-items: center;
+}
+
+/* Style for the entire scrollbar */
+.view-form::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+  appearance: none;
+}
+
+/* Track (the background of the scrollbar) */
+.view-form::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.view-form::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle on hover */
+.view-form::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+.form-name {
+  text-align: center;
+}
+
+.container {
+  display: flex;                   /* Enable flexbox for the input and button container */
+  justify-content: space-between;  /* Space between the input and button */
+  align-items: center;             /* Center align items vertically */
+  width: 99%;
+                       /* Take the full width of the parent */
+  margin-top: 40px; 
+  margin-bottom: 5px;
+}
+
+.image-container {
+  display: flex;                   /* Use flexbox for image container */
+  justify-content: center;          /* Center the image */
+  align-items: center;              /* Center vertically */
+  margin-top: 10px;                /* Space above the image */
+}
+
+.uploaded-image {
+  max-width: 100%;                 /* Responsive image */
+  height: auto;                    /* Maintain aspect ratio */
+  border-radius: 4px;              /* Optional: adds some rounded corners */
+  margin-top: 8px;                 /* Space above the image */
+}
+
+
+
+.search {
+  width: 15%;                     /* Fixed width for the search input, adjusted to take more space */
+  padding: 10px 15px;            /* Padding for the search input */
+  margin: 10px;                /* Vertical margin, remove horizontal margin */
+  border: 1px solid #ccc;        /* Border for the search input */
+  border-radius: 4px;            /* Rounded corners for the search input */
+  font-size: 1rem;               /* Font size for the search input */
+  box-sizing: border-box;         /* Include padding and border in width */
+}
+
+.SetupRulesButton {
+  padding: 10px 15px;            /* Padding for the button */
+  margin: 10px;               /* Vertical margin, remove horizontal margin */
+  font-weight: bold;
+  border: 1px solid #ccc;        /* Button border */
+  border-radius: 4px;            /* Button border radius */
+  font-size: 1rem;                /* Button font size */
+  box-sizing: border-box;         /* Include padding and border in width */
+  cursor: pointer;                /* Change cursor on hover */
+  width: 160px;                    /* Fixed width for the button */
+  background-color: #abaaaa;
+  box-shadow: 0px 4px 8px 0px rgba(96, 93, 93, 0.2);
+  border: solid 1px rgb(186, 180, 180);
+}
+
+.SetupRulesButton:hover {
+  background-color: #9c9c9c;
+  transition: 0.5s;
+  opacity: 1s;
+}
+
+
+
+#textStats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination span {
+  margin: 0 10px 0 10px;
+}
+
+.pagination button:hover {
+  background-color: #d4d3d3;
+  transition: 0.5s;
+}
+
+
+
+/* for the SetupRuelsPage*/
+/* Ensure to place this in your App.css or relevant CSS file */
+.dropdown-container {
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  padding: 20px;
+  margin-top: 10px;
+  width: 80%; /* Adjust to 80% if needed */
+  margin: 0 auto; 
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* Style for each dropdown */
+.dropdown-container select {
+  padding: 0.5rem;
+  font-size: 1rem;
+   /* Set a fixed width for the dropdowns */
+}
+
+.dropdown-row {
+  display: flex;
+  flex-direction: column; /* Stack dropdowns vertically */
+}
+
+.dropdown-row-content {
+  border: 2px dashed #6666;
+  margin-bottom: 0px;
+  padding: 30px;
+  margin-top: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.ruleNumber {
+  position: absolute;
+  top: -7px;        /* Adjust to position it closer to the top */
+  left: 15px;       /* Adjust to position it closer to the left */
+  font-size: 15px; /* Adjust font size */
+  font-weight: bold;
+  color: black;    /* Color for better visibility */
+}
+
+.dropdown-box {
+  padding: 20%;
+  border: 1px solid #ddd;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.dropdown-box-middle {
+  padding: 20%;
+  border: 1px solid #ddd;
+  justify-content: space-around;
+}
+
+
+
+.dropdown-logical-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the dropdown */
+  margin: 30px; 
+}
+
+.dropdown-logical {
+  
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.dropdown-logical:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+  transition: background-color 0.2s;}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the button */
+  margin-top: 10px; /* Optional spacing above the button */
+}
+
+.add-button{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #b0b0b0;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Back to Create Form button */
+.btn-BackCreateForm {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  background-color: #b0b0b0;
+}
+
+.btn-BackCreateForm:hover {
+  background-color: #9c9c9c;
+}
+
+/* Save As Draft button */
+.btn-SaveAsDraft {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 150px; /* Different from Complete button to prevent overlap */
+  background-color: #b0b0b0;
+}
+
+.btn-SaveAsDraft:hover {
+  background-color: #9c9c9c;
+}
+
+/* Complete button */
+.btn-Complete {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #b0b0b0;
+  color: white;
+}
+
+.btn-SaveAsDraft:hover {
+  background-color: #9c9c9c;
+}
+
+
+
+
+/*Test 
+
+
+/* styles.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Make sure the modal is above other content */
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 50px;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.view-form {
+  display: flex;
+  flex-direction: column; /* Stack the form vertically */
+  padding: 15px; /* Padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  height: 500px; /* Make the popup fill the full height */
+  overflow-y: auto; /* Allow scrolling if content exceeds window height */
+}
+
+.form-fields {
+  grid-template-columns: repeat(4, 1fr);
+  flex-grow: 1; /* Allow this section to grow and fill the available space */
+  margin: 10px;
+  width: 97%; /* Full width for the container */
+
+}
+
+.form-field-row {
+  display: flex; /* Use flexbox for layout within this row */
+  flex-direction: row; /* Arrange fields in a row */
+  margin-bottom: 15px; /* Space below each row */
+
+}
+
+.form-field {
+  border: 1px solid #ccc; /* Border styling */
+  padding: 15px; /* Increase padding for better touch targets */
+  border-radius: 5px; /* Rounded corners */
+  background: #f9f9f9; /* Background for the fields */
+  margin: 1%; /* Margin around the field */
+  flex: 100%; /* Set flex-basis to 25% to take up 25% of the space */
+  box-sizing: border-box; /* Ensure padding and border are included in total width */
+  justify-content: center;
+  align-items: center;
+}
+
+.form-field p {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fafafa; /* Softer background for text blocks */
+  margin: 5% auto; /* Auto margin for centering */
+  box-sizing: border-box;
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adapt height based on content */
+}
+
+/* Styles for labels */
+.form-field label {
+  display: block;
+  font-weight: 600;
+  color: #444; /* Darker, softer color */
+  margin-bottom: 8px;
+  font-size: 0.95rem; /* Slightly smaller label size */
+}
+
+
+.custom-checkbox-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+}
+
+.custom-checkbox {
+  transform: scale(2);
+  margin-right: 8px; /* Space between checkbox and text */
+}
+
+
+
+
+
+
+
+.large-box {
+  border: 1px solid #ccc; /* Border for dropdown */
+  padding: 8px 1px; /* Adjust padding for consistency */
+  cursor: pointer;
+  background-color: #fafafa; /* Background color */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Match font size to other fields */
+  line-height: 1.5; /* Ensure line height is consistent */
+  display: flex;
+  align-items: center; 
+}
+
+.arrow {
+  float: right; /* Position the arrow to the right */
+  margin-left: 10px; /* Space before the arrow */
+}
+
+.dropdown-options {
+  background-color: #fafafa; /* Background for options */
+  border: 1px solid #ccc; /* Border for options */
+  border-radius: 4px; /* Rounded corners */
+  width: 95%; /* Match the width of the dropdown */
+  z-index: 1000; /* Ensure dropdown is above other content */
+  max-height: 150px; /* Limit height */
+  overflow-y: auto; /* Enable scrolling if needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+}
+
+.dropdown-option {
+  padding: 8px 10px; /* Consistent padding for options */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Match font size to other fields */
+}
+
+.dropdown-option:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+  transition: background-color 0.2s; /* Smooth transition */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  width: 30px; /* Set width for the circle */
+  height: 30px; /* Set height for the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px; /* Size of the X */
+}
+
+.close-button:hover {
+  background: darkred; /* Darken on hover */
+}
+
+
+
+
+
+/* Edit page */
+.edit-form-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.form-name-input {
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center;
+  align-items: center; /* Center vertically */
+}
+
+.edit-label {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-right: 8px; /* Space between "Edit:" and the form name */
+  font-weight: bold; /* Make "Edit:" bold */
+  margin-bottom: 30px;
+}
+
+.editable-name {
+  font-size: 24px; /* Adjust font size as needed */
+  cursor: text; /* Change cursor to text when hovering over the editable text */
+  outline: none; /* No outline by default */
+  margin-bottom: 30px;
+}
+
+
+
+
+.form-buttons {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  background-color: #f9f9f9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.form-buttons button:hover {
+  background-color: #3a8e77; /* Darken the button on hover */
+}
+
+.form-buttons-container {
+  margin-top: 50px; /* Space above the buttons */
+  margin-bottom: 20px; /* Space below the buttons */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out buttons */
+}
+
+.button {
+  background-color: #f9f9f9; /* Background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button-group {
+  display: flex; /* Use flexbox for button group layout */
+}
+
+.next-button {
+  margin-right: 20px; /* Space between next and save draft buttons */
+}

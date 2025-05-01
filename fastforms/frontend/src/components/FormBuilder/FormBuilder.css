@@ -1,0 +1,69 @@
+/* FormBuilder.css */
+
+.form-builder {
+    padding: 20px;
+    border: 2px dashed #6666; /* Darker dashed border */
+    margin-top: 20px;
+    margin-inline: 8%;
+  }
+  
+  .field-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: stretch; /* Vertically center the fields and button */
+  }
+  
+  .fields-container {
+    display: flex;
+    gap: 10px;
+    flex: 1; /* Allow fields to take available space */
+  }
+
+  .field-container {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #6666;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .add-field-button,
+  .add-row-button {
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    background-color: #D3D3D3;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for background and shadow */
+  }
+  
+  .add-field-button {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  
+  .add-row-button {
+    width: 75px;
+    height: 75px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 20px auto;
+    align-items: center;
+  }
+  
+  /* Hover styles */
+  .add-field-button:hover,
+  .add-row-button:hover {
+    background: #9c9c9c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  

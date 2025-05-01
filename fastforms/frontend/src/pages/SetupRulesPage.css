@@ -1,0 +1,139 @@
+.dropdown-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for each dropdown */
+.dropdown-container select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.dropdown-row {
+  display: flex;
+  flex-direction: column; 
+}
+
+.dropdown-row-content {
+  border: 2px dashed #6666;
+  margin-bottom: 0px;
+  padding: 30px;
+  margin-top: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.ruleNumber {
+  position: absolute;
+  top: -7px; 
+  left: 15px; 
+  font-size: 15px; 
+  color: black; 
+}
+
+.dropdown-box {
+  padding: 20%;
+  border: 1px solid #ddd;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.dropdown-box-middle {
+  padding: 20%;
+  border: 1px solid #ddd;
+  justify-content: space-around;
+}
+
+.dropdown-logical-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.dropdown-logical {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.dropdown-logical:hover {
+  background-color: #f1f1f1; 
+  transition: background-color 0.2s;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px; 
+}
+
+.add-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  background-color: #d3d3d3;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.add-button:hover {
+  background: #9c9c9c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area, allowing it to grow and take up available space */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; 
+}
+
+/* Button container at the bottom of the page */
+.button-wrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+/* Button styling */
+.buttonLeft,
+.buttonRight {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  background-color: #d3d3d3;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.buttonLeft:hover,
+.buttonRight:hover {
+  background: #9c9c9c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.buttonRight {
+  margin: 0 20px;
+}
+
+.buttonLeft {
+  margin-right: auto; 
+}

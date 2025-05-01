@@ -1,0 +1,51 @@
+.dropdown-field-container {
+    padding: 15px;
+    border: 1px solid #6666;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .option-row {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .option-input {
+    padding: 8px;
+    width: calc(100% - 24px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .remove-option-button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: grey;
+    cursor: pointer;
+  }
+  
+  .add-option-button {
+    margin-top: 10px;
+    color: black;
+    cursor: pointer;
+    background-color: #D3D3D3;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 4px;
+    padding: 8px 18px;
+  }
+  
+  .add-option-button:hover {
+    background: #9c9c9c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  

@@ -1,0 +1,97 @@
+.active {
+  background-color: #D3D3D3;
+  border: solid 1px rgb(207, 200, 200);
+  box-shadow: 0px 4px 8px 0px rgba(93, 91, 91, 0.2);
+}
+
+/* General styles */
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  margin-bottom: 25px;
+  padding: 1.5rem;
+  width: 65%; 
+  max-width: 1200px; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease;
+}
+
+/* Unordered list styling */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; 
+  justify-content: space-around; 
+}
+
+/* List items and links */
+nav ul li {
+  margin: 0 1rem; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 2%; 
+  top: 2%; 
+  width: 165px; 
+  height: 165px;
+}
+
+/* Logo image */
+.logo {
+  height: auto; 
+  max-height: 6rem; 
+  width: 15vw; 
+  max-width: 150px; 
+}
+
+/* Logout button */
+.logout {
+  margin-left: 5px;
+  font-size: 1rem; 
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1150px) {
+  nav {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; 
+    padding: 2rem;
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    width: 100%; 
+  }
+
+  nav ul li {
+    margin: 1rem 0; 
+  }
+
+  .logo {
+    display: none; /* Hide logo on small screens */
+  }
+}

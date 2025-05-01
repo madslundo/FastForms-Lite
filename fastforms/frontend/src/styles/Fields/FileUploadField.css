@@ -1,0 +1,36 @@
+.file-upload-field {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #6666;
+    border-radius: 4px;
+    position: relative;
+    height: calc(100% - 15px);
+  }
+  
+  .file-upload-field input[type="text"] {
+    width: calc(100% - 15px);
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .file-upload-field input[type="file"] {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .file-upload-field img {
+    max-width: 100%;
+    margin-top: 5px;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
