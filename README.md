@@ -38,8 +38,13 @@ It allows users to visually build forms with various fields and simulate how for
 
 📷 Screenshots
 View Forms page:
+
 ![Image](https://github.com/user-attachments/assets/87a2f956-1d9e-4e0b-aa3e-83c8d9255674) 
 
+
+Create Form Page:
+
+![Image](https://github.com/user-attachments/assets/70ea0423-7e32-442b-a31a-621b14325997)
 
 📁 Folder Structure
 
