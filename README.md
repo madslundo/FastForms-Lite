@@ -47,6 +47,9 @@ Create Form Page:
 
 ![Image](https://github.com/user-attachments/assets/70ea0423-7e32-442b-a31a-621b14325997)
 
+Add Rules to Forms: 
+
+![Image](https://github.com/user-attachments/assets/b95229e0-e1ba-4113-aa0c-53e8975bbd21)
 
 
 📄 License
